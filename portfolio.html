@@ -7,44 +7,60 @@
     <title>Portfolio: Jacob A</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="icon" href="images/favicon.png" />
 </head>
 
 <body id="portfolio">
+    <header>
+        <h1>Jacob Ashworth</h1>
+    </header>
     <nav>
         <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="resume.html">Resume</a></li>
+            <li><button type="button" id="darkButton">Darker Mode!</button></li>
+            <li><a class="navigate" href="index.html">About</a></li>
+            <li><a class="navigate" href="portfolio.html">Portfolio</a></li>
+            <li><a class="navigate" href="resume.html">Resume</a></li>
         </ul>
     </nav>
     <main id="portfolio">
         <h1>Portfolio</h1>
         <ul id="portfolioItems">
             <li>
-            <h2><a href="#">Project Name</a></h2>
-            <img scr="images/download.jpg" />
-            <p>Quis lectus nulla at volutpat diam ut venenatis. Montes nascetur ridiculus mus mauris. Lacus sed
-                turpis tincidunt id aliquet risus. Orci eu lobortis elementum nibh tellus. Maecenas accumsan lacus
-                vel facilisis volutpat. Suspendisse ultrices gravida dictum fusce ut placerat orci.</p>
+            <h2><a href="#">Pixy Camera</a></h2>
+            <img src="images\pixy.jpg" />
+            <p>During my time at High School in FIRST Robotics, I programmed a system that used cameras to automatically
+                play the game.  It used a pair of PIXY cameras on the robot to locate the came objects, pick them up, target
+                the goal, and automatically fire.
+            </p>
             </li>
             <li>
-            <h2><a href="#">Project Name</a></h2>
-            <img scr="images/download.jpg" />
-            <p>Quis lectus nulla at volutpat diam ut venenatis. Montes nascetur ridiculus mus mauris. Lacus sed
-                turpis tincidunt id aliquet risus. Orci eu lobortis elementum nibh tellus. Maecenas accumsan lacus
-                vel facilisis volutpat. Suspendisse ultrices gravida dictum fusce ut placerat orci.</p>
+            <h2><a href="#">FANUC Hangman</a></h2>
+            <img src="images\robot.jpg" />
+            <p>As mentioned in the about page, I worked with a FANUC robotic arm during my time in High School.  I used this 
+                arm to play hangman against a human opponent, and it would flash lights at the player if they lost.
+            </p>
             </li>
             <li>
-            <h2><a href="#">Project Name</a></h2>
-            <img scr="images/download.jpg" />
-            <p>Quis lectus nulla at volutpat diam ut venenatis. Montes nascetur ridiculus mus mauris. Lacus sed
-                turpis tincidunt id aliquet risus. Orci eu lobortis elementum nibh tellus. Maecenas accumsan lacus
-                vel facilisis volutpat. Suspendisse ultrices gravida dictum fusce ut placerat orci.</p>
+            <h2><a href="#">NKFL Navigation</a></h2>
+            <img src="images\research.jpg" />
+            <p>During my time at Rose Hulman, I began doing research with Dr. Yoder on navigating through NK fitness landscapes.
+                An NK fitness landscape is a way to model the fitness of a given bitstring 'genome', where the chromosomes actually
+                depend on each other and effect their fitness, rather than the more standard approach where each chromosome acts independently.
+            </p>
+            </li>
+            <li>
+            <h2><a href="#">CNC Minimill</a></h2>
+            <img src="images\minimill.jpg" />
+            <p>A final experience I have had has been working with CNC minimills for automated manufacturing.  I used these minimills to create
+                precisely manufactured objects such as an aluminium Turner's Cube, a piece of rock with my initials engraved into it, and a small
+                drawing of a formula 1 car.
+            </p>
             </li>
 
         </ul>
     </main>
+    <footer>
+        <p id="email">You can email me at ASHWORJS@rose-hulman.edu<p\>
+    </footer>
     <script src="scripts/main.js"></script>
 </body>
 

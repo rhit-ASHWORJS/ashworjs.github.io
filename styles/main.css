@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap');
+
+:root {
+    --vertical-space: 2rem;
+    --horizontal-space: 3rem;
+    --light-text-color: #68e5eb;
+    --heading-color: #dad9fa;
+    --link-color: #5868ec;
+}
+
+
+body {
+    background-image: linear-gradient(45deg, rgb(57,56,56) 0%,transparent 73%),repeating-linear-gradient(90deg, rgba(127, 127, 127,0.1) 0px, rgba(127, 127, 127,0.1) 1px,transparent 1px, transparent 17px),repeating-linear-gradient(0deg, rgba(127, 127, 127,0.1) 0px, rgba(127, 127, 127,0.1) 1px,transparent 1px, transparent 17px),linear-gradient(0deg, rgb(57,56,56),rgb(57,56,56));
+    /* background-image: linear-gradient(45deg, rgb(1,1,1) 0%,transparent 73%),repeating-linear-gradient(90deg, rgba(127, 127, 127,0.1) 0px, rgba(127, 127, 127,0.1) 1px,transparent 1px, transparent 17px),repeating-linear-gradient(0deg, rgba(127, 127, 127,0.1) 0px, rgba(127, 127, 127,0.1) 1px,transparent 1px, transparent 17px),linear-gradient(0deg, rgb(1,1,1),rgb(1,1,1)); */
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#darkButton {
+    padding: .25em .5em;
+    font-size: 1.5em;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.navigate {
+    color: var(--link-color);
+}
+
+body > * {
+    padding-left: 1em;
+    color: var(--light-text-color);
+}
+
+@media screen and (min-width: 30em) {
+    body > * {
+        padding-left: 4em;
+    }
+}
+
+h1, h2, h3 {
+    line-height: 1.5em;
+    font-family: 'Source Code Pro', monospace;
+    color: var(--heading-color);
+}
+
+h2 {
+    color: #6b66e8;
+}
+
+body #about img {
+    height:15em;
+}
+
+p {
+    max-width: 50em;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "head head" 
+                        "nav nav"
+                        "main main" 
+                        "footer footer";
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+@media screen and (min-width: 30em) {
+    body {
+        grid-template-areas: "head nav" 
+                        "main main" 
+                        "footer footer";
+        grid-template-rows: auto 1fr auto;
+    }
+}
+
+body > header {
+    grid-area: head;
+}
+
+body > nav {
+    grid-area: nav;
+    padding-bottom: 0.5em;
+}
+
+@media screen and (min-width: 30em) {
+    body > nav{
+    padding-top: 2.5em;
+    padding-bottom: 0;
+    }
+}
+
+body > nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+body > main {
+    grid-area: main;
+}
+
+body > footer {
+    text-align: center;
+    grid-area: footer;
+}
+
+header, footer {
+    padding-top: var(--vertical-space);
+    padding-right: var(--horizontal-space);
+    /* padding: 1.2rem 4rem; */
+}
+
+header {
+    margin: 0;
+}
+
+body #portfolio #portfolioItems {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    list-style-type: none;
+    padding: 0;
+}
+
+@media screen and (min-width: 25em) {
+body #portfolio #portfolioItems li {
+    flex-basis: 48%;
+    padding-right: 2%;
+}
+}
+
+body #portfolio #portfolioItems li img {
+    max-width: 75%;
+}
+
+#email {
+    color: #FFFFFF;
+}
+
+body #portfolio #portfolioItems h2 a{
+    color: var(--link-color);
+}
